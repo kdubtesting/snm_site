@@ -224,5 +224,18 @@
 		box-shadow:0 0 5px rgba(0,0,0,0.4);
 		margin-bottom:0.15em;
 	}
+
+	.img-content
+	{
+		width:20em;
+		height:auto;
+		overflow:hidden;
+		text-align:left;
+		position:absolute;
+		bottom:0.5em;
+		left:0.5em;
+		display:inline-block;
+		padding-right:5em;
+	}
 }
 
