@@ -97,6 +97,7 @@ textarea
 		padding-left:15px;
 		padding-right:0px;
 		margin-left:calc(5vw - 4px);
+		-webkit-appearance:none;
 		border-radius:0px;
 	}
 
@@ -112,6 +113,7 @@ textarea
 	form
 	{
 		width:70vw;
+		margin:auto;
 	}
 
 	#first-name,
@@ -119,16 +121,22 @@ textarea
 	#email,
 	#reason
 	{
-		width:calc(70vw - 1.35vw);
-		padding-left:1.35vw;
+		width:calc(70vw - 15px);
+		padding-left:15px;
+		padding-right:0px;
+		-webkit-appearance:none;
+		border-radius:0px;
+
 	}
 
 	textarea
 	{
-		max-width:calc(70vw - 1.37vw);
-		min-width:calc(70vw - 1.37vw);
-		width:calc(70vw - 1.37vw);
-		padding-left:1.35vw;
+		max-width:calc(70vw - 15px);
+		min-width:calc(70vw - 15px);
+		padding-left:15px;
+		padding-right:0px;
+		-webkit-appearance:none;
+		border-radius:0px;
 	}
 }
 
@@ -137,6 +145,7 @@ textarea
 	form
 	{
 		width:50vw;
+		margin:auto;
 	}
 
 	#first-name,
@@ -144,15 +153,21 @@ textarea
 	#email,
 	#reason
 	{
-		width:calc(50vw - 0.65vw);
-		padding-left:0.65vw;
+		max-width:calc(50vw - 15px);
+		min-width:calc(50vw - 15px);
+		padding-left:15px;
+		padding-right:0px;
+		-webkit-appearance:none;
+		border-radius:0px;
 	}
 
 	textarea
 	{
-		max-width:calc(50vw - 0.67vw);
-		min-width:calc(50vw - 0.67vw);
-		width:calc(50vw - 0.67vw);
-		padding-left:0.65vw;
+		max-width:calc(50vw - 15px);
+		min-width:calc(50vw - 15px);
+		padding-left:15px;
+		padding-right:0px;
+		-webkit-appearance:none;
+		border-radius:0px;
 	}
 }
