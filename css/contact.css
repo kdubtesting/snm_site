@@ -112,7 +112,7 @@ textarea
 {
 	form
 	{
-		width:70vw;
+		width:60vw;
 		margin:auto;
 	}
 
@@ -121,7 +121,7 @@ textarea
 	#email,
 	#reason
 	{
-		width:calc(70vw - 15px);
+		width:calc(60vw - 15px);
 		padding-left:15px;
 		padding-right:0px;
 		-webkit-appearance:none;
@@ -131,8 +131,8 @@ textarea
 
 	textarea
 	{
-		max-width:calc(70vw - 15px);
-		min-width:calc(70vw - 15px);
+		max-width:calc(60vw - 15px);
+		min-width:calc(60vw - 15px);
 		padding-left:15px;
 		padding-right:0px;
 		-webkit-appearance:none;
