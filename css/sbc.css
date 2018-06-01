@@ -74,6 +74,53 @@
 	background-color:#000;
 }
 
+.white-button
+{
+	margin-top:0.5em;
+	color:#fff;
+	border:2px solid #fff;
+}
+
+.white-button:hover
+{
+	color:#000;
+	background-color:#fff;
+}
+
+.img-content
+{
+	width:80%;
+	height:auto;
+	overflow:hidden;
+	text-align:left;
+	position:absolute;
+	bottom:0.5em;
+	left:0.5em;
+}
+
+.img-head
+{
+	font-weight:bold;
+	font-size:1.45em;
+	text-transform:uppercase;
+	padding-left:0.35vw;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+	color:#fff;
+}
+
+.img-content > hr
+{
+	width:80%;
+	height:2px;
+	border:none;
+	box-shadow:none;
+	background-color:#fff;
+	margin-left:0.35vw;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+}
+
 #loc-tab
 {
 	width:90vw;
