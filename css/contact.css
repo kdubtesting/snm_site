@@ -83,16 +83,18 @@ textarea
 	#email,
 	#reason
 	{
-		width:calc(90vw - 2.35vw);
-		padding-left:2.35vw;
+		width:calc(90vw - 15px);
+		padding-left:15px;
+		padding-right:0px;
 	}
 
 	textarea
 	{
-		max-width:calc(90vw - 2.37vw);
-		min-width:calc(90vw - 2.37vw);
-		width:calc(90vw - 2.37vw);
+		max-width:calc(90vw - 15px);
+		min-width:calc(90vw - 15px);
+		width:calc(90vw - 15px);
 		padding-left:2.35vw;
+		padding-right:0px;
 	}
 }
 
