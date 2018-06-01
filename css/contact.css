@@ -35,7 +35,6 @@ form
 {
 	width:auto;
 	height:auto;
-	margin:auto;
 	margin-top:0.5em;
 	margin-bottom:0.5em;
 }
@@ -86,15 +85,25 @@ textarea
 		width:calc(90vw - 15px);
 		padding-left:15px;
 		padding-right:0px;
+		margin-left:calc(5vw - 4px);
+		-webkit-appearance:none;
+		border-radius:0px;
 	}
 
 	textarea
 	{
 		max-width:calc(90vw - 15px);
 		min-width:calc(90vw - 15px);
-		width:calc(90vw - 15px);
-		padding-left:2.35vw;
+		padding-left:15px;
 		padding-right:0px;
+		margin-left:calc(5vw - 4px);
+		border-radius:0px;
+	}
+
+	#submit
+	{
+		margin-left:calc(5vw - 4px);
+		border-radius:0px;
 	}
 }
 
