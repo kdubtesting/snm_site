@@ -15,6 +15,7 @@ html, body
 	font-weight:normal;
 	letter-spacing:0.35vw;
 	cursor:default;
+	-webkit-text-size-adjust:100%;
 }
 
 nav
