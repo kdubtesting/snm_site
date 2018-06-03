@@ -46,3 +46,78 @@ for(var i = 0; i < openBar.length; i++)
 		$(selectBar[n]).css("height", "2em");
 	});
 }
+
+var steinSel = document.getElementById("stein-select");
+var steinName = document.querySelectorAll(".stein-name");
+var steinNameA = new Array();
+
+for(var i = 0; i < steinName.length; i++)
+{
+	steinNameA[i] = steinName[i];
+	$(steinName[i]).click(function()
+	{
+		var n = steinNameA.indexOf(this);
+		var content = steinName[n].innerHTML;
+		steinSel.innerHTML = content;
+	});
+}
+
+var bostonName = document.getElementById("boston-grand-name");
+var bostonGrand = document.querySelectorAll(".boston-grand");
+var bostonGrandA = new Array();
+
+for(var i = 0; i < bostonGrand.length; i++)
+{
+	bostonGrandA[i] = bostonGrand[i];
+	$(bostonGrand[i]).click(function()
+	{
+		var n = bostonGrandA.indexOf(this);
+		var content = bostonGrand[n].innerHTML;
+		bostonName.innerHTML = content;
+	});
+}
+
+var bostonNameUp = document.getElementById("boston-upright-name");
+var bostonUpright = document.querySelectorAll(".boston-up");
+var bostonUprightA = new Array();
+
+for(var i = 0; i < bostonUpright.length; i++)
+{
+	bostonUprightA[i] = bostonUpright[i];
+	$(bostonUpright[i]).click(function()
+	{
+		var n = bostonUprightA.indexOf(this);
+		var content = bostonUpright[n].innerHTML;
+		bostonNameUp.innerHTML = content;
+	});
+}
+
+var essexName = document.getElementById("essex-grand-name");
+var essexGrand = document.querySelectorAll(".essex-grand");
+var essexGrandA = new Array();
+
+for(var i = 0; i < essexGrand.length; i++)
+{
+	essexGrandA[i] = essexGrand[i];
+	$(essexGrand[i]).click(function()
+	{
+		var n = essexGrandA.indexOf(this);
+		var content = essexGrand[n].innerHTML;
+		essexName.innerHTML = content;
+	});
+}
+
+var essexNameUp = document.getElementById("essex-upright-name");
+var essexUpright = document.querySelectorAll(".essex-upright");
+var essexUprightA = new Array();
+
+for(var i = 0; i < essexUpright.length; i++)
+{
+	essexUprightA[i] = essexUpright[i];
+	$(essexUpright[i]).click(function()
+	{
+		var n = essexUprightA.indexOf(this);
+		var content = essexUpright[n].innerHTML;
+		essexNameUp.innerHTML = content;
+	});
+}
