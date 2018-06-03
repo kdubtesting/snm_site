@@ -25,6 +25,7 @@ var openBar = document.querySelectorAll(".open-bar");
 var openBarA = new Array();
 var closeBar = document.querySelectorAll(".close-bar");
 var closeBarA = new Array();
+var selectBar = document.querySelectorAll(".select-bar");
 
 for(var i = 0; i < openBar.length; i++)
 {
@@ -32,6 +33,7 @@ for(var i = 0; i < openBar.length; i++)
 	closeBarA[i] = closeBar[i];
 	$(openBar[i]).on("touchstart", function()
 	{
-		alert("Hello");
+		var n = openBarA.indexOf(this);
+		$(selectBar[n]).css("height", "auto");
 	});
 }
