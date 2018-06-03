@@ -20,3 +20,18 @@ for(var i = 0; i < grandButton.length; i++)
 		$(inPianoDis[n + 1]).css("margin-left", "-90vw");
 	});
 }
+
+var openBar = document.querySelectorAll(".open-bar");
+var openBarA = new Array();
+var closeBar = document.querySelectorAll(".close-bar");
+var closeBarA = new Array();
+
+for(var i = 0; i < openBar.length; i++)
+{
+	openBarA[i] = openBar[i];
+	closeBarA[i] = closeBar[i];
+	$(openBar[i]).on("touchstart", function()
+	{
+		alert("Hello");
+	});
+}
