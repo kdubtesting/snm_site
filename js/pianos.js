@@ -52,6 +52,13 @@ for(var i = 0; i < openBar.length; i++)
 		$(closeBar[n]).css("display", "block");
 		$(selectBar[n]).css("height", "auto");
 	});*/
+	$(closeBar[i]).on("touchstart", function()
+	{
+		var n = closeBarA.indexOf(this);
+		$(this).css("display", "none");
+		$(openBar[n]).css("display", "block");
+		$(selectBar[n]).css("height", "2em");
+	});
 	$(closeBar[i]).on("touchend", function()
 	{
 		var n = closeBarA.indexOf(this);
