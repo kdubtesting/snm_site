@@ -31,7 +31,7 @@ for(var i = 0; i < openBar.length; i++)
 {
 	openBarA[i] = openBar[i];
 	closeBarA[i] = closeBar[i];
-	$(openBar[i]).on("touchstart", function()
+	$(openBar[i]).on("touchend", function()
 	{
 		var n = openBarA.indexOf(this);
 		$(this).css("display", "none");
@@ -45,7 +45,7 @@ for(var i = 0; i < openBar.length; i++)
 		$(closeBar[n]).css("display", "block");
 		$(selectBar[n]).css("height", "auto");
 	});
-	$(closeBar[i]).on("touchstart", function()
+	$(closeBar[i]).on("touchend", function()
 	{
 		var n = closeBarA.indexOf(this);
 		$(this).css("display", "none");
