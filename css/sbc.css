@@ -1,4 +1,4 @@
-#body-overflow
+#body-overflow	
 {
 	width:100vw;
 	height:calc(100vh - 4em);
@@ -149,7 +149,7 @@
 
 .locs > hr
 {
-	width:80%;
+	width:90%;
 	height:2px;
 	background-color:#000;
 	box-shadow:none;
@@ -161,7 +161,7 @@
 
 .loc-info
 {
-	width:80%;
+	width:90%;
 	margin:auto;
 	margin-top:0.95em;
 	margin-bottom:0.5em;
@@ -173,7 +173,7 @@
 
 .map
 {
-	width:80%;
+	width:90%;
 	height:14em;
 	margin:auto;
 	margin-top:0.95em;
