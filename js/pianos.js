@@ -31,7 +31,7 @@ for(var i = 0; i < openBar.length; i++)
 {
 	openBarA[i] = openBar[i];
 	closeBarA[i] = closeBar[i];
-	$(openBar[i]).on("touchend", function()
+	$(openBar[i]).on("touchstart", function()
 	{
 		var n = openBarA.indexOf(this);
 		$(this).css("display", "none");
