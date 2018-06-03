@@ -59,14 +59,14 @@ if(winW <= 534 && winH <= 534)
 /*---------------------------------------------------*/
 //This is the code for using the menu buttons on smaller
 //screens to open the navigation.
-$("#menu-button").on("touchstart click", function()
+$("#menu-button").click(function()
 {
 	$("#small-menu").css("top", "4em");
 	$(this).css("display", "none");
 	$("#close-button").css("display", "block");
 });
 
-$("#close-button").on("touchstart click", function()
+$("#close-button").click(function()
 {
 	$("#small-menu").css("top", "-15em");
 	$(this).css("display", "none");
