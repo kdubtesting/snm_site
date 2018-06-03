@@ -34,6 +34,29 @@ for(var i = 0; i < openBar.length; i++)
 	$(openBar[i]).on("touchstart", function()
 	{
 		var n = openBarA.indexOf(this);
+		$(this).css("display", "none");
+		$(closeBar[n]).css("display", "block");
 		$(selectBar[n]).css("height", "auto");
+	});
+	$(openBar[i]).on("click", function()
+	{
+		var n = openBarA.indexOf(this);
+		$(this).css("display", "none");
+		$(closeBar[n]).css("display", "block");
+		$(selectBar[n]).css("height", "auto");
+	});
+	$(closeBar[i]).on("touchstart", function()
+	{
+		var n = closeBarA.indexOf(this);
+		$(this).css("display", "none");
+		$(openBar[n]).css("display", "block");
+		$(selectBar[n]).css("height", "2em");
+	});
+	$(closeBar[i]).on("click", function()
+	{
+		var n = closeBarA.indexOf(this);
+		$(this).css("display", "none");
+		$(openBar[n]).css("display", "block");
+		$(selectBar[n]).css("height", "2em");
 	});
 }
