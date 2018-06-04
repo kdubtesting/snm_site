@@ -91,7 +91,6 @@
 	margin:auto;
 	margin-top:0.75em;
 	margin-bottom:0.5em;
-	
 }
 
 .grand-button,
@@ -548,5 +547,47 @@
 	#essex-grand-piano-name
 	{
 		margin-top:3em;
+	}
+}
+
+@media only screen and (min-width:1025px)
+{
+	.select-bar
+	{
+		left:1em;
+	}
+
+	.piano-image-sec
+	{
+		height:36em;
+		width:60%;
+		position:absolute;
+		top:0px;
+		left:0px;
+		text-align:center;
+		overflow:hidden;
+	}
+
+	.piano-info-sec
+	{
+		width:40%;
+		height:auto;
+		overflow:hidden;
+		position:absolute;
+		right:0px;
+		top:0px;
+		border-left:2px solid #000;
+	}
+
+	.piano-info-sec > hr
+	{
+		display:none;
+	}
+
+	#boston-grand-piano-name,
+	#boston-upright-piano-name,
+	#essex-grand-piano-name
+	{
+		margin-top:0.5em;
 	}
 }
