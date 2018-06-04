@@ -1,3 +1,89 @@
+#spirio-para
+{
+	margin-top:0.75em;
+	margin-bottom:0em;
+}
+
+#spirio-ad
+{
+	width:90vw;
+	height:auto;
+	margin:auto;
+	margin-top:0.95em;
+	margin-bottom:0.5em;
+	position:relative;
+}
+
+#spirio-ad-one
+{
+	width:auto;
+	height:auto;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-image:url("../img/Spirio/crspirio.jpg");
+	box-shadow:inset 0 0 0 800px rgba(0,0,0,0.2);
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+
+#spirio-ad-two
+{
+	width:auto;
+	height:auto;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-image:url("../img/Spirio/ipad.png");
+	box-shadow:inset 0 0 0 800px rgba(0,0,0,0.2);
+	position:absolute;
+	right:0px;
+	top:0px;
+}
+
+#spirio-ad-three
+{
+	width:auto;
+	height:auto;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-image:url("../img/Spirio/woman.jpg");
+	box-shadow:inset 0 0 0 800px rgba(0,0,0,0.2);
+	position:absolute;
+	right:0px;
+	bottom:0px;
+}
+
+#spirio-ad-four
+{
+	width:auto;
+	height:auto;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-image:url("../img/Spirio/piano.png");
+	box-shadow:inset 0 0 0 800px rgba(0,0,0,0.2);
+	position:absolute;
+	left:0px;
+	bottom:10.5em;
+}
+
+#spirio-ad-five
+{
+	width:auto;
+	height:auto;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-image:url("../img/Spirio/party.jpg");
+	box-shadow:inset 0 0 0 800px rgba(0,0,0,0.2);
+	position:absolute;
+	left:0px;
+	bottom:0px;
+}
+
 .piano-button-sec
 {
 	width:90vw;
@@ -203,6 +289,36 @@
 
 @media only screen and (max-width:635px)
 {
+	#spirio-ad
+	{
+		height:35em;
+	}
+
+	#spirio-ad-one
+	{
+		width:44.25vw;
+		height:14em;
+	}
+
+	#spirio-ad-two
+	{
+		width:44.25vw;
+		height:10em;
+	}
+
+	#spirio-ad-three
+	{
+		width:44.25vw;
+		height:24.5em;
+	}
+
+	#spirio-ad-four,
+	#spirio-ad-five
+	{
+		width:44.5vw;
+		height:10em;
+	}
+
 	.grand-button,
 	.upright-button
 	{
@@ -232,7 +348,7 @@
 	{
 		width:85%;
 		height:auto;
-		margin-top:29%;
+		margin-top:25%;
 	}
 
 	#boston-grand-img
