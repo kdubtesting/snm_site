@@ -13,16 +13,51 @@
 
 #loading-circle
 {
+	width:auto;
+	height:auto;
+	border-radius:50%;
+	margin:auto;
+	margin-top:calc((100vh - (10em + 20px)) / 2);
+	position:relative;
+	overflow:hidden;
+	display:inline-block;
+}
+
+#loading-bar
+{
 	width:10em;
 	height:10em;
 	border-top:10px solid #000;
+	border-bottom:10px solid #000;
 	border-left:10px solid transparent;
 	border-right:10px solid transparent;
-	border-bottom:10px solid #000;
+	background-color:#fff;
 	border-radius:50%;
 	animation:spin 1s infinite linear;
-	margin:auto;
-	margin-top:calc((100vh - (10em + 20px)) / 2);
+}
+
+#loading-text
+{
+	width:10em;
+	height:10em;
+	text-align:center;
+	overflow:hidden;
+	position:absolute;
+	top:10px;
+	left:10px;
+	z-index:100000;
+	border-radius:50%;
+}
+
+#loading-text > h4
+{
+	text-transform:uppercase;
+	font-size:0.95em;
+	line-height:0.35em;
+	padding-left:0.35vw;
+	letter-spacing:0.35vw;
+	font-weight:normal;
+	margin-top:5em;
 }
 
 @keyframes spin
