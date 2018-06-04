@@ -91,8 +91,7 @@
 	margin:auto;
 	margin-top:0.75em;
 	margin-bottom:0.5em;
-	display:flex;
-	justify-content:space-between;
+	
 }
 
 .grand-button,
@@ -337,6 +336,12 @@
 		height:35em;
 	}
 
+	.piano-button-sec
+	{
+		display:flex;
+		justify-content:space-between;
+	}
+
 	.piano-image-sec
 	{
 		height:65%;
@@ -464,7 +469,7 @@
 
 	.select-bar
 	{
-		width:60vw;
+		width:15em;
 		position:absolute;
 		top:1em;
 		left:4.5vw;
@@ -495,5 +500,53 @@
 	#stein-img
 	{
 		margin-top:4.5em;
+	}
+
+	#boston-grand-img
+	{
+		height:380px;
+		margin-top:3em;
+	}
+
+	#boston-upright-img
+	{
+		margin-top:3em;
+	}
+
+	#essex-grand-img
+	{
+		height:350px;
+		margin-top:4em;
+	}
+
+	.piano-button-sec
+	{
+		text-align:left;
+	}
+
+	.grand-button,
+	.upright-button
+	{
+		padding-left:3.35em;
+		padding-right:3em;
+		margin-right:0.5em;
+	}
+
+	.piano-info-sec
+	{
+		text-align:left;
+	}
+
+	.piano-name-info,
+	.piano-sub-name
+	{
+		margin-left:5%;
+	}
+
+	#boston-grand-piano-name,
+	#boston-upright-piano-name,
+	#essex-grand-piano-name
+	{
+		margin-top:3em;
 	}
 }
