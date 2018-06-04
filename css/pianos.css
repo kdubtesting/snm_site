@@ -246,7 +246,7 @@
 
 .names-buttons-sec
 {
-	heigh:2em;
+	height:2em;
 	width:100%;
 	display:flex;
 	justify-content:space-between;
@@ -405,5 +405,95 @@
 		overflow:hidden;
 		text-align:left;
 		background-color:#fff;
+	}
+}
+
+@media only screen and (min-width:636px)
+{
+	#spirio-ad
+	{
+		height:30em;
+	}
+
+	#spirio-ad-one
+	{
+		height:13em;
+		width:44.5vw;
+	}
+
+	#spirio-ad-two
+	{
+		width:44.5vw;
+		height:20em;
+	}
+
+	#spirio-ad-three
+	{
+		width:22vw;
+		height:9.5em;
+	}
+
+	#spirio-ad-four
+	{
+		height:16.5em;
+		width:44.5vw;
+		bottom:0px;
+	}
+
+	#spirio-ad-five
+	{	
+		width:22vw;
+		height:9.5em;
+		left:45.5vw;
+		bottom:0px;
+	}
+
+	.pianos-display
+	{
+		height:33em;
+		overflow:hidden;
+	}
+
+	.grand-sec,
+	.upright-sec
+	{
+		width:90vw;
+		height:36em;
+		position:relative;
+	}
+
+	.select-bar
+	{
+		width:60vw;
+		position:absolute;
+		top:1em;
+		left:4.5vw;
+		border:2px solid #000;
+		background-color:#fff;
+	}
+
+	.names-sec
+	{
+		height:2em;
+		overflow:hidden;
+	}
+
+	.piano-image-sec
+	{
+		width:90vw;
+		height:25em;
+		text-align:center;
+		overflow:hidden;
+	}
+
+	.piano-img
+	{
+		width:auto;
+		height:350px;
+	}
+
+	#stein-img
+	{
+		margin-top:4.5em;
 	}
 }
