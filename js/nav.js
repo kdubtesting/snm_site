@@ -1,3 +1,8 @@
+window.addEventListener("load", function()
+{
+	$("#loading-screen").css("display", "none");
+});
+
 var winW = $(document).width();
 var winH = $(document).height();
 
