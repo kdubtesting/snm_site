@@ -76,23 +76,4 @@ $(window).on("resize", function(){
 	}
 });
 
-/*
-$(linkButtons[0]).on("mouseenter", function(){
-	$(linkTexts[0]).css("border-bottom", "2px solid #000");
-});
-
-$(linkButtons[0]).on("mouseleave", function(){
-	$(linkTexts[0]).css("border-bottom", "2px solid #fff");
-});
-
-
-$(linkButtons[1]).on("mouseenter", function(){
-	$(linkTexts[1]).css("border-bottom", "2px solid #000");
-});
-
-
-$(linkButtons[1]).on("mouseleave", function(){
-	$(linkTexts[1]).css("border-bottom", "2px solid #fff");
-});
-*/
 

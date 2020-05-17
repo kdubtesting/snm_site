@@ -1,3 +1,11 @@
+html
+{
+	width:100vw;
+	height:100vh;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+
 html::-webkit-scrollbar
 {
 	display:none;
@@ -10,7 +18,7 @@ body
 	width:100vw;
 	height:200vh;
 	position:relative;
-	box-shadow:inset 0 0 0 1px #000;
+	box-shadow:inset 0 0 0 5px #00ff00;
 }
 
 /*-------------------------*/
@@ -27,6 +35,7 @@ body
 	z-index:1000000;
 	box-shadow:0 0 3px rgba(0.0,0,0.2);
 	overflow:hidden;
+	background-color:#fff;
 }
 
 #company-name
