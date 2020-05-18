@@ -77,3 +77,4 @@ $(window).on("resize", function(){
 });
 
 
+$(window).css("oveflow-x", "hidden");

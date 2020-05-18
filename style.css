@@ -1,9 +1,8 @@
 html
 {
-	width:100vw;
 	height:100vh;
-	overflow-x:hidden;
-	overflow-y:scroll;
+	width:110vw;
+	box-shadow:inset 0 0 0 10px #00ff00;
 }
 
 html::-webkit-scrollbar
@@ -18,13 +17,8 @@ body
 	width:100vw;
 	height:200vh;
 	position:relative;
-	box-shadow:inset 0 0 0 5px #0000ff;
 }
 
-body::-webkit-scrollbar
-{
-	display:none;
-}
 
 /*-------------------------*/
 /*----------Menu-----------*/
