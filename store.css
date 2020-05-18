@@ -1,0 +1,33 @@
+#store-body
+{
+	width:90vw;
+	height:auto;
+	position:absolute;
+	top:7em;
+	left:5vw;
+	box-shadow:inset 0 0 0 1px #000;
+}
+
+.product-card
+{
+	width:20em;
+	height:30em;
+	box-shadow:0 0 5px rgba(0,0,0,0.3);
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+
+#option-button
+{
+	width:2em;
+	height:2em;
+	border-radius:50%;
+	box-shadow:0 0 0 2px rgba(0,0,0,0.2);
+	position:fixed;
+	z-index:100000000000;
+	bottom:2em;
+	left:1.5em;
+	background-color:#fff;
+}
+
