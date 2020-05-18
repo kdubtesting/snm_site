@@ -25,6 +25,8 @@ function createProductCard(number, windW)
 		var image = document.createElement("DIV");
 		image.className = "product-image";
 
+		card.appendChild(image);
+
 		//Create Info block
 		var info = document.createElement("DIV");
 
@@ -50,6 +52,7 @@ function createProductCard(number, windW)
 			topPos += (parseInt($(storeBody.childNodes[0]).css('height')) + 15);
 			$(storeBody.childNodes[i]).css("left", leftPos + "px");
 			$(storeBody.childNodes[i]).css("top", topPos + "px");
+			leftPos += (cardW + 15);
 		}
 	}
 
@@ -61,10 +64,21 @@ function createProductCard(number, windW)
 
 	topPos += (parseInt($(storeBody.childNodes[0]).css('height')) + 15);
 	$(storeBody).css("height", topPos + "px");
+	$(document.body).css("height", ((7 * 16) + topPos + 30) + "px");
 }
 
 createProductCard(random, windowW);
 console.log(storeBody.childNodes);
+for(var i = 0; i < storeBody.childNodes.length; i++)
+{
+	console.log("hello");
+	$(storeBody.childNodes[i]).on("mouseenter", function(){
+		$(this).css("box-shadow", "0 0 5px rgba(0,0,0,0.5)");
+	});
+	$(storeBody.childNodes[i]).on("mouseleave", function(){
+		$(this).css("box-shadow", "0 0 5px rgba(0,0,0,0.3)");
+	});
+}
 
 var storeBodyW = parseInt($(storeBody).css("width"));
 
