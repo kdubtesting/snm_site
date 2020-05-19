@@ -34,7 +34,7 @@ var fCardH = parseInt($(storeBody.childNodes[0]).css("height"));
 //This will be the ration between height and width
 var ratioHW = fCardH / fCardW;
 var ratioWH = fCardW / fCardH;
-var fiftyOGH = 0.5 * fCardH;
+var fiftyOGH = 0.7 * fCardH;
 
 //These variables will be for sizing purposes
 var maxWidth = (fCardW * 4) + 3;
@@ -59,6 +59,19 @@ $(window).on("load", function(){
 			$(storeBody).css("width", (window.innerWidth - 16) + "px");
 			$(storeBody).css("height", setCardH + "px");
 			$(storeBody).css("left", (8) + "px");
+
+			if(setCardH <= fiftyOGH)
+			{
+				console.log(window.innerWidth - 16);
+				var remainSWidth = (window.innerWidth - 16) - 1;
+				var newCardSW = remainSWidth * 0.5;
+				var newCardSH = newCardSW + (2 * 16);
+				$(storeBody.childNodes[0]).css("height", newCardSH + "px");
+				$(storeBody.childNodes[0]).css("width", newCardSW + "px");
+				$(storeBody).css("width", (window.innerWidth - 16) + "px");
+				$(storeBody).css("height", newCardSH + "px");
+				$(storeBody).css("left", (8) + "px");
+			}
 		}
 	}
 	else
@@ -94,8 +107,8 @@ $(window).on("resize", function(){
 			{
 				console.log(window.innerWidth - 16);
 				var remainSWidth = (window.innerWidth - 16) - 1;
-				var newCardSW = remainWidth * 0.5;
-				var newCardSH = newCardW + (7 * 16);
+				var newCardSW = remainSWidth * 0.5;
+				var newCardSH = newCardSW + (2 * 16);
 				$(storeBody.childNodes[0]).css("height", newCardSH + "px");
 				$(storeBody.childNodes[0]).css("width", newCardSW + "px");
 				$(storeBody).css("width", (window.innerWidth - 16) + "px");
