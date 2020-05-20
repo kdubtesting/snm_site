@@ -93,18 +93,15 @@ $(window).on("load", function(){
 			loadMore(options[1][random], setCardW, setCardH, smallWidth);
 			
 
-			/*if(setCardH <= fiftyOGH)
+			if(setCardH <= fiftyOGH)
 			{
-				console.log(window.innerWidth - 16);
 				var remainSWidth = (window.innerWidth - 16) - 1;
 				var newCardSW = remainSWidth * 0.5;
-				var newCardSH = newCardSW + (2 * 16);
-				$(storeBody.childNodes[0]).css("height", newCardSH + "px");
-				$(storeBody.childNodes[0]).css("width", newCardSW + "px");
+				var newCardSH = newCardSW + (1 * 16);
 				$(storeBody).css("width", (window.innerWidth - 16) + "px");
-				$(storeBody).css("height", newCardSH + "px");
 				$(storeBody).css("left", (8) + "px");
-			}*/
+				loadMore(options[1][random], newCardSW, newCardSH, remainSWidth);
+			}
 		}
 		else
 		{
@@ -138,18 +135,15 @@ $(window).on("resize", function(){
 			$(storeBody).css("left", (8) + "px");
 			loadMore(options[1][random], newCardW, newCardH, remainWidth);
 
-			/*if(newCardH <= fiftyOGH)
+			if(newCardH <= fiftyOGH)
 			{
-				console.log(window.innerWidth - 16);
 				var remainSWidth = (window.innerWidth - 16) - 1;
 				var newCardSW = remainSWidth * 0.5;
 				var newCardSH = newCardSW + (2 * 16);
-				$(storeBody.childNodes[0]).css("height", newCardSH + "px");
-				$(storeBody.childNodes[0]).css("width", newCardSW + "px");
 				$(storeBody).css("width", (window.innerWidth - 16) + "px");
-				$(storeBody).css("height", newCardSH + "px");
 				$(storeBody).css("left", (8) + "px");
-			}*/
+				loadMore(options[1][random], newCardSW, newCardSH, remainSWidth);
+			}
 		}
 	}
 	else
@@ -159,61 +153,4 @@ $(window).on("resize", function(){
 		loadMore(options[1][random], fCardW, fCardH, maxWidth)
 	}
 });
-
-/*
-var testCard = document.createElement("DIV");
-testCard.className = "product-card";
-storeBody.removeChild(storeBody.childNodes[0]);
-storeBody.appendChild(testCard)
-var testCardW = parseInt($(storeBody.childNodes[0]).css("width"));
-var testCardH = parseInt($(storeBody.childNodes[0]).css("height"));
-var ratioHW = testCardH / testCardW;
-var halfOGH = 0.6 * testCardH;
-var maxBreakPoint = testCardW * 3; //This is where the site will either get smaller or larger
-
-$(window).on("resize", function(){
-	windowRef = Math.floor(0.9 * window.innerWidth);
-	if(windowRef <= maxBreakPoint)
-	{
-		var cardW = (windowRef * (0.33) - 6);
-		var cardH = ratioHW * cardW;
-		if(cardH <= halfOGH)
-		{
-			cardW = parseInt($(storeBody.childNodes[0]).css("width"));
-			cardH = ratioHW * cardW;
-			var storeBodyW = (2 * cardW);
-			$(storeBody).css("width", storeBodyW + "px");
-			$(storeBody).css("height", cardH + "px")
-			$(storeBody).css("left", ((window.innerWidth / 2) - (storeBodyW / 2)) + "px");	
-		
-			if(storeBodyW > window.innerWidth)
-			{
-				storeBodyW = 0.9 * window.innerWidth;
-				cardH = storeBodyW;
-				cardW = storeBodyW;
-				$(storeBody.childNodes[0]).css("width", cardW + 'px');
-				$(storeBody.childNodes[0]).css("height", cardH + "px");
-				$(storeBody).css("left", "5vw");
-				$(storeBody).css("width", storeBodyW + "px");
-				$(storeBody).css("height", storeBodyW + "px");
-			}
-
-		}
-		else
-		{
-			$(storeBody).css("width", "90vw");
-			$(storeBody).css("left", "5vw");
-			$(storeBody.childNodes[0]).css('width', cardW + "px");
-			$(storeBody.childNodes[0]).css('height', cardH + "px");
-		}
-
-	}
-	else
-	{
-		$(storeBody).css("left", "5vw");
-		$(storeBody.childNodes[0]).css('width', testCardW + "px");
-		$(storeBody.childNodes[0]).css('height', testCardH + "px");
-	}
-})
-*/
 

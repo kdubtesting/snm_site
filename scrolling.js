@@ -25,10 +25,10 @@ $(companyName).css("margin-top", companyNameT + "px");
 var yearsOp = document.getElementById("years-op");
 var yearsOpH = parseInt($(yearsOp).css("height"));
 
-var yearsOpL = (1.5 * 16) + 10 + companyNameW;
+var yearsOpL = (0.5 * 16) + 10 + companyNameW;
 var yearsOpT = (menuH / 2) - (yearsOpH / 2);
 
-var totalTitleLength = (1.5 * 16) + companyNameW + 10 + parseInt($(yearsOp).css("width")) + 10;
+var totalTitleLength = (0.5 * 16) + companyNameW + 10 + parseInt($(yearsOp).css("width")) + 10;
 
 $(yearsOp).css("left", yearsOpL + "px");
 $(yearsOp).css("top", yearsOpT + "px");
