@@ -39,28 +39,61 @@ var fiftyOGH = 0.7 * fCardH;
 //These variables will be for sizing purposes
 var maxWidth = (fCardW * 4) + 3;
 
+function loadMore(cardAmount, cardWidth, cardHeight, storeBodyW)
+{
+	while(storeBody.childNodes.length != 0)
+	{
+		console.log("hello")
+		storeBody.removeChild(storeBody.childNodes[0]);
+	}
+	var leftPos = 0;
+	var topPos = 0;
+
+	for(var i = 0; i < cardAmount; i++)
+	{
+		var createCard = document.createElement("DIV");
+		createCard.className = "product-card";
+		storeBody.appendChild(createCard);
+
+		if(leftPos < storeBodyW){
+			$(storeBody.childNodes[i]).css("left", leftPos + "px");
+			$(storeBody.childNodes[i]).css("width", cardWidth + "px");
+			$(storeBody.childNodes[i]).css("height", cardHeight + "px");
+			$(storeBody.childNodes[i]).css("top", topPos + "px");
+			leftPos += (cardWidth + 1);
+		}
+		else
+		{
+			leftPos = 0;
+			topPos += (cardHeight + 1);
+			$(storeBody.childNodes[i]).css("left", "0px");
+			$(storeBody.childNodes[i]).css("top", topPos + "px");
+			$(storeBody.childNodes[i]).css("width", cardWidth + "px");
+			$(storeBody.childNodes[i]).css("height", cardHeight + "px");
+			leftPos += (cardWidth + 1);
+		}
+	}
+	topPos += (cardHeight + 1);
+	$(storeBody).css("height", topPos + "px");
+}
+
 $(window).on("load", function(){
 	if((window.innerWidth - 16) <= maxWidth)
 	{
-		var threeWidth = (3 * fCardH) + 2;
-		$(storeBody.childNodes[0]).css("width", fCardW + "px");
-		$(storeBody.childNodes[0]).css("height", fCardH + "px");
-		$(storeBody).css("height", fCardH + "px");
-		$(storeBody).css("width", threeWidth + "px");
-		$(storeBody).css("left", ((window.innerWidth / 2) - (threeWidth / 2)) + "px");
+		var threeWidth = (3 * fCardW) + 2;
+		
 
 		if((window.innerWidth - 16) <= threeWidth)
 		{
 			var smallWidth = window.innerWidth - 16 - 3;
 			var setCardW = smallWidth / 3;
 			var setCardH = ratioHW * setCardW;
-			$(storeBody.childNodes[0]).css("height", setCardH + "px");
-			$(storeBody.childNodes[0]).css("width", setCardW + "px");
 			$(storeBody).css("width", (window.innerWidth - 16) + "px");
-			$(storeBody).css("height", setCardH + "px");
 			$(storeBody).css("left", (8) + "px");
+			loadMore(options[1][random], setCardW, setCardH, smallWidth);
+			
 
-			if(setCardH <= fiftyOGH)
+			/*if(setCardH <= fiftyOGH)
 			{
 				console.log(window.innerWidth - 16);
 				var remainSWidth = (window.innerWidth - 16) - 1;
@@ -71,14 +104,20 @@ $(window).on("load", function(){
 				$(storeBody).css("width", (window.innerWidth - 16) + "px");
 				$(storeBody).css("height", newCardSH + "px");
 				$(storeBody).css("left", (8) + "px");
-			}
+			}*/
+		}
+		else
+		{
+			loadMore(options[1][random], fCardW, fCardH, threeWidth);
+			$(storeBody).css("width", threeWidth + "px");
+			$(storeBody).css("left", ((window.innerWidth / 2) - (threeWidth / 2)) + "px");
 		}
 	}
 	else
 	{
 		$(storeBody).css("width", maxWidth + "px");
-		$(storeBody).css("height", fCardH + "px");
 		$(storeBody).css("left", ((window.innerWidth / 2) - (maxWidth / 2)) + "px");
+		loadMore(options[1][random], fCardW, fCardH, maxWidth)
 	}
 });
 
@@ -86,9 +125,7 @@ $(window).on("resize", function(){
 	if((window.innerWidth - 16) <= maxWidth)
 	{
 		var threeWidth = (3 * fCardW) + 2;
-		$(storeBody.childNodes[0]).css("width", fCardW + "px");
-		$(storeBody.childNodes[0]).css("height", fCardH + "px");
-		$(storeBody).css("height", fCardH + "px");
+		loadMore(options[1][random], fCardW, fCardH, threeWidth);
 		$(storeBody).css("width", threeWidth + "px");
 		$(storeBody).css("left", ((window.innerWidth / 2) - (threeWidth / 2)) + "px");
 
@@ -97,13 +134,11 @@ $(window).on("resize", function(){
 			var remainWidth = window.innerWidth - 16 - 3;
 			var newCardW = remainWidth / 3;
 			var newCardH = ratioHW * newCardW;
-			$(storeBody.childNodes[0]).css("height", newCardH + "px");
-			$(storeBody.childNodes[0]).css("width", newCardW + "px");
 			$(storeBody).css("width", (window.innerWidth - 16) + "px");
-			$(storeBody).css("height", newCardH + "px");
 			$(storeBody).css("left", (8) + "px");
+			loadMore(options[1][random], newCardW, newCardH, remainWidth);
 
-			if(newCardH <= fiftyOGH)
+			/*if(newCardH <= fiftyOGH)
 			{
 				console.log(window.innerWidth - 16);
 				var remainSWidth = (window.innerWidth - 16) - 1;
@@ -114,16 +149,14 @@ $(window).on("resize", function(){
 				$(storeBody).css("width", (window.innerWidth - 16) + "px");
 				$(storeBody).css("height", newCardSH + "px");
 				$(storeBody).css("left", (8) + "px");
-			}
+			}*/
 		}
 	}
 	else
 	{
-		$(storeBody.childNodes[0]).css("width", fCardW + "px");
-		$(storeBody.childNodes[0]).css("height", fCardH + "px");
 		$(storeBody).css("width", maxWidth + "px");
-		$(storeBody).css("height", fCardH + "px");
 		$(storeBody).css("left", ((window.innerWidth / 2) - (maxWidth / 2)) + "px");
+		loadMore(options[1][random], fCardW, fCardH, maxWidth)
 	}
 });
 
